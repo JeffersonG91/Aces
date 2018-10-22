@@ -1,11 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-	<p>Hello World!!</p>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"> <img class="imgLogo" src="assets/img/ACES-logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-intem active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Connect</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="assets/img/background.png">
+			<div class="carousel-caption">
+				<h1 class="display-2">ACES-Demo</h1>
+				<h3>Website Layout Demo</h3>
+				<button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+				<button type="button" class="btn btn-primary btn-lg"> Get Started</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="assets/img/background2.png">
+		</div>
+		<div class="carousel-item">
+			<img src="assets/img/background3.png">
+		</div>
+	</div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead"> <b>Welcome to ACES Premier Orthopaedics</b> You can expect the highest level of care from our board-certified orthopedict doctors and pain</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Apply Today</button></a>
+		</div>
+	</div>
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Conditions</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">You deserve answers for pain relief and restored mobility.</p>
+		</div>
+	</div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-diagnoses"></i>
+			<h3>Back and Neck</h3>
+			<p>Conditions related to arthritis and osteoarthritis; problems related to the vertebrae; slipped, degenerating or herniated discs; back pain or neck pain related to nerve damage, osteoporosis or spinal problems or abnormalities such as scoliosis or spinal stenosis; and back or neck problems from sports injuries.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-diagnoses" class="rounded-circle"></i>
+			<h3>Foot and Ankle</h3>
+			<p>Ankle and foot sprains, ankle and foot fractures, torn ankle ligaments; plantar fasciitis and heel spurs; Achilles ruptures, torn or injured Achilles tendons, tendonitis; tarsal tunnel syndrome due to a pinched nerve; pronation and supination; unusual conditions such as Lederhose’s Disease.</p>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<i class="fas fa-diagnoses" ></i>
+			<h3>Hip and Knee</h3>
+			<p>Osteoarthritis causes cartilage and membrane of the joints to degenerate; rheumatoid arthritis is an autoimmune disease that attacks the linings of the joints. Both lead to great pain, stiffness, mobility problems and joint deformity. ACES Premier Orthopaedics and Sports Medicine can help patients whose hips and knees are becoming painful and whose deteriorating condition is interfering with daily life. Other conditions of the hip and knee that we treat are damaged or torn cartilage (such as the menisci in the knee), tendonitis, bursitis in the hip/pelvic area, and muscle bruises and tears.</p>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<i class="fas fa-diagnoses"></i>
+			<h3>Shoulder and Elbow</h3>
+			<p>Shoulder tears in the shoulder joint or in the rotator cuff (common among athletes but they can happen to anyone); shoulder bursitis and shoulder fractures, including “floating” shoulder; dislocated shoulder or dislocated elbow; tennis elbow and golfer’s elbow; problems due to biceps tendon rupture and other bicep tendon conditions; surgical repair of certain types of elbow and forearm fractures; and radial and cubital tunnel syndrome, which affect the forearm area and nerves.</p>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<i class="fas fa-diagnoses"></i>
+			<h3>Hand and Wrist</h3>
+			<p>Athletes and those who enjoy sports often injure their fingers, hands and wrists through the repetitive motion of swinging, rotating, gripping or throwing. ACES Premier Orthopaedics and Sports Medicine sees many patients suffering: torn or sprained ligaments in the hand, thumb or wrist; injuries and fractures of the hand, wrist or fingers; dislocations of finger joints; tendonitis in the wrist or torn or hyperextended tendons in the fingers (“baseball finger”, “jersey finger”); other deformities of the tendons and fingers.</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2>What To Expect</h2>
+			<h4>Before your orthopedic surgery or procedure</h4>
+			<p>Your surgery/procedure will be scheduled in conjunction with your physician’s office. They will provide you with preliminary education about your surgery and the recovery phase and provide you with a date for your surgery/procedure. A nurse from ACES Premier Orthopaedics and Sports Medicine will contact you about arrival time and necessary paperwork and will give you the pre-op instructions. Some helpful tips are:</p>
+			<li>You will be required to fast for a certain amount of time prior to surgery; the length of time will depend on your procedure and other factors.</li>
+			<li>Check with your doctor to determine if a new medication regimen should be instituted before your operation.</li>
+			<li>Pack lightly — toiletries and loose, comfortable clothing are suggested. If the patient requires additional personal belongings, friends and family member may bring items to the recovery room. However, ancillary personal belongings and valuables should be left at home.</li>
+			<br>
+			<a href="#" class="btn btn-primary">Learn More</a>
+		</div>
+		<div class="col-lg-6">
+			<img src="assets/img/desk.png" class="img-fluid">
+		</div>
+	</div>
+</div>
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+			
+		</div>
+	</div>
+</figure>
+
+<!--- Emoji Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
+<div id="emoji" class="collapse">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="assets/img/gif/panda.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="assets/img/gif/poo.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="assets/img/gif/unicorn.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="assets/img/gif/chicken.gif">
+			</div>
+		</div>
+	</div>
+</div>
+  
+<!--- Meet the team -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Meet the Team</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card text-center">
+				<img class="card-img-top align-self-center m-3 rounded-circle padding" src="assets/img/ACES-HowardBaruch.png" id="imgHB">
+				<div class="card-body">
+					<h4 class="card-title">Howard Baruch MD Orthopedic Surgeon</h4>
+					<p class="card-text">Dr. Baruch is fellowship trained in adult reconstructive surgery of the hip and knee, as well as spine surgery. He is certified in arthroscopic microdiscectomy by the Graduate Hospital in Philadelphia and received an appointment to the medical staff as an instructor in this procedure.</p>
+					<a href="" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+
+
+<!--- Footer -->
+
 
 </body>
 </html>
