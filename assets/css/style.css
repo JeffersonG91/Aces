@@ -23,6 +23,16 @@ html, body {
   font-size: 1.1em !important;
 }
 
+#slides .carousel-item {
+  height: 700px;
+}
+
+#slides-team {
+  height: 400px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 .carousel-inner img {
   width: 100%;
   height: 100%;
@@ -47,6 +57,11 @@ html, body {
   padding-bottom: 1rem;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #045D57;
+}
+
 .btn-primary {
   background-color: #00887C;
   border: 1px solid #00887C;
@@ -55,6 +70,20 @@ html, body {
 .btn-primary:hover {
   background-color: #045D57;
   border: 1px solid #045D57;
+}
+
+.btn-outline-secondary {
+  color: #00887C;
+  border-color: #00887C;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #045D57;
+  border: 1px solid #045D57;
+}
+
+#li:hover {
+  background-color: #fff;
 }
 
 .jumbotron {
