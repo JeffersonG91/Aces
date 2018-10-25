@@ -28,7 +28,7 @@ html, body {
 }
 
 #slides-team {
-  height: 400px;
+  height: 450px;
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
@@ -227,12 +227,24 @@ hr.light-100 {
     font-size: 95%;
     padding: 8px 14px;
   }
+  #slides .carousel-item {
+  height: 500px;
+  }
   .display-4 {
     font-size: 200%;
   }
   .social a {
     font-size: 2.5em;
     padding: 1.2rem;
+  }
+}
+@media (max-width: 613px) {
+  #slides-team {
+    height: 510px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 340px;
   }
 }
 @media (max-width: 576px) {
@@ -251,6 +263,12 @@ hr.light-100 {
   }
   .carousel-indicators {
     display: none;
+  }
+  #slides .carousel-item {
+  height: 300px;
+  }
+  #slides-team {
+    height: 600px;
   }
   .display-4 {
     font-size: 160%;
